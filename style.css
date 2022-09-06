@@ -10,3 +10,82 @@
     border: 0;
     text-decoration: none;
 }
+@font-face {
+    font-family: Josefin;
+    src: url('/font/static/JosefinSans-Regular.ttf');
+}
+@font-face {
+    font-family: JosefinLight;
+    src: url('/font/static/JosefinSans-ExtraLight.ttf');
+}
+body {
+    font-family: Josefin, sans-serif;
+    font-size: 16px;
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    padding-bottom: 100px;
+}
+img#logo {
+    padding: 30px;
+    width: 100%;
+    max-width: 35%;
+}
+img#hero {
+    padding-bottom: 50px;
+    width: 100%;
+}
+.texts {
+    text-align: center;
+}
+header {
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 7px;
+    line-height: 36px;
+    padding: 0 30px;
+}
+header #colorHeader {
+    display: block;
+    letter-spacing: 8px;
+    color: var(--desaturatedRed);
+    font-family: JosefinLight, sans-serif;
+}
+header .blackHeader {
+    color: var(--grayishRed);
+    /* display: block; */
+}
+p.description {
+    padding: 20px 30px;
+    font-size: 0.9em;
+    line-height: 20px;
+    color: var(--desaturatedRed);
+    /* color: var(--softRed); */
+}
+#relPar {
+    position: relative;
+}
+input {
+    border: 1px solid var(--desaturatedRed);
+    padding: 15px 25px;
+    width: 80%;
+    border-radius: 30px;
+    background-color: hsl(0, 100%, 98%);
+}
+input::placeholder {
+    font-size: 0.85em;
+    opacity: 0.6;
+    letter-spacing: 1.5px;
+    color: var(--desaturatedRed);
+}
+#enter {
+    position: absolute;
+    bottom: 0px;
+    left: 80%;
+    height: 47px;
+    width: 60px;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    line-height: 45px;
+    font-size: 30px;
+    color: white;
+    border-radius: 30px;
+    box-shadow: 4px 1px 30px -15px var(--softRed);
+}
