@@ -21,11 +21,15 @@ enter.addEventListener('click', () => {
             errorMsg.style.display = 'block'
             errorImg.style.display = 'none'
             errorMsg.style.color = 'rgb(20, 231, 20)'
-            errorMsg.textContent = '✅Congratulations! check your email to continue📧..'
+            errorMsg.textContent = '✅Congratulations! check your email to continue📧.. double click the enter icon to reload'
         }
     } else {
         errorMsg.style.display = 'block'
         errorImg.style.display = 'block'
         input.value = null
     }
+})
+
+enter.addEventListener('dblclick', () => {
+    location.reload()
 })
