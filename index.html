@@ -11,7 +11,10 @@
 <body>
   <div class="container">
     <img src="/images/logo.svg" alt="" id="logo">
-    <img src="/images/hero-mobile.jpg" alt="" id="heroMob" class="hero">
+    <picture id="pic">
+      <source media="(min-width: 1200px)" srcset="images\hero-desktop.jpg">
+      <img src="/images/hero-mobile.jpg" alt="" class="hero">
+    </picture>
     <!-- <img src="/images/hero-desktop.jpg" alt="" id="heroDesk" class="hero"> -->
     <div class="texts">
       <header>
